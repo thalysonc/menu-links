@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --bgcolor : #fff;
+    --accentcolor: #E43225; /* COR PRIMÁRIA  */
+    --accentcolorhover: #cd281c;
+    --textaccentcolor: #fff;
+    --textaccentcolorhover: #fff;
+    --borderaccentcolor: #E43225;
+    --titlecolor:  #000000;
+    --teliconcolor:  #0d9f00;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+
+.icons{
+    font-size: 20px;
+    vertical-align: text-top;
+    margin-right: 5px;
+}
+
+
+.link-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 40px auto;
+    gap: 20px;
+}
+.link-tree img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.link-tree h1 {
+    font-size: 1.5rem;
+    color: var(--titlecolor);
+    margin-bottom: -1rem;
+}
+.link-tree span {
+    font-size: 1rem;
+    color: var(--titlecolor);
+    margin-bottom: 2rem;
+}
+
+.link-tree a {
+    background-color: var(--accentcolor);
+    color: var(--textaccentcolor);
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 2px var(--borderaccentcolor);
+    transition: all 0.2s linear;
+}
+
+.link-tree a:hover{
+    background-color: var(--accentcolorhover);
+    color: var(--textaccentcolorhover);
+}
+
+.link-tree font {
+    color: var(--textaccentcolor);
+    font-weight: normal;
+}
+
+.link-tree a:hover font{
+    color: var(--textaccentcolorhover);
+}
+
+/*.sub-button a:hover {
+    color: var(--textaccentcolorhover)!important;
+}*/
+
+@media (min-width: 1024px) {
+    .link-tree {
+        width: 40vw;
+    }
+}
+
+.link-tree-page {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 40px auto;
+    gap: 20px;
+}
+.link-tree-page img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.link-tree-page h1 {
+    font-size: 1.5rem;
+    color: var(--titlecolor);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.link-tree-page h2 {
+    font-size: 1.2rem;
+    color: var(--titlecolor);
+    margin-bottom: -1rem;
+}
+.link-tree-page span {
+    font-size: 1rem;
+    color: var(--titlecolor);
+}
+
+.btn-voltar {
+    background-color: var(--accentcolor);
+    color: var(--textaccentcolor);
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 2px var(--borderaccentcolor);
+    transition: all 0.2s linear;
+}
+
+.btn-voltar:hover {
+    background-color: var(--bgcolor);
+    color: var(--textaccentcolorhover);
+}
+
+.tel{
+    color: var(--titlecolor);
+    text-decoration: none;
+}
+
+.tel i {
+    color: var(--teliconcolor);
+}
